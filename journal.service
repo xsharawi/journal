@@ -1,0 +1,11 @@
+[Unit]
+
+Description=save logs of last 1 hour
+
+[Service]
+
+Type=simple
+ExecStart=/usr/bin/bash /home/ubuntu/myscript.sh
+
+[Install]
+WantedBy=multi-user.target
